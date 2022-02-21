@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=0", initial-scale=1.0 />
         <link rel="stylesheet" href="assets/css/template.css" />
+        <script src="assets/js/hideShow.js"></script>
         <title>Criando o Personagem</title>
     </head>
     <body>
@@ -45,16 +46,16 @@
                                 </select>
 
                                 <span>Classe Base</span>
-                                <select>
-                                    <option value="1">Warrior</option>
-                                    <option value="2">Mage</option>
-                                    <option value="5">Archer</option>
-                                    <option value="6">Assassin</option>
+                                <select id="charClass">
+                                    <option value="subClassWarrior">Warrior</option>
+                                    <option value="subClassMage">Mage</option>
+                                    <option value="subClassArcher">Archer</option>
+                                    <option value="subClassAssassin">Assassin</option>
                                 </select>
 
                                 <span>SubClasse</span>
                                 <!-- Warriors class -->
-                                <div class="subClassWarrior">
+                                <div id="subClassWarrior">
                                     <label>
                                         <input type="checkbox" />
                                         Berserker
@@ -79,7 +80,7 @@
                                 <!-- Warriors class -->
 
                                 <!-- Mage class -->
-                                <div class="subClassMage">
+                                <div id="subClassMage">
                                     <label>
                                         <input type="checkbox" />
                                         Sorceress
@@ -104,7 +105,7 @@
                                 <!-- Mage class -->
 
                                 <!-- Archer class -->
-                                <div class="subClassArcher">
+                                <div id="subClassArcher">
                                     <label>
                                         <input type="checkbox" />
                                         Gunslinger
@@ -129,7 +130,7 @@
                                 <!-- Archer class -->
 
                                 <!-- Assassin class -->
-                                <div class="subClassAssassin">
+                                <div id="subClassAssassin">
                                     <label>
                                         <input type="checkbox" />
                                         DeathBlade

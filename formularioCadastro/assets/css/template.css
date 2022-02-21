@@ -88,22 +88,23 @@ select {
 }
 
 .charTree select {
-    width: 100px;    
-    
+    width: 100px;        
     display: flex;
     flex-direction: column;
 }
 
-.subClassWarrior,
-.subClassMage,
-.subClassArcher,
-.subClassAssassin {
+#subClassWarrior,
+#subClassMage,
+#subClassArcher,
+#subClassAssassin {
     display: flex;
     flex-direction: column;
 }
+/* 
+#subClassMage,
+#subClassArcher,
+#subClassAssassin  {
+    display: none;
+} */
 
-.subClassMage,
-.subClassArcher,
-.subClassAssassin  {
-    visibility: hidden;
-}
+
