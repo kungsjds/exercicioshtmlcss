@@ -4,141 +4,174 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=0", initial-scale=1.0 />
         <link rel="stylesheet" href="assets/css/template.css" />
-        <title>Formulário de Cadastro de Personagem - RPG</title>
+        <title>Criando o Personagem</title>
     </head>
     <body>
         <header>
-            Criando o Personagem
+            <h1>Formulário de Cadastro de Personagem - RPG</h1>
         </header>
         
         <section>
-            <form>
-                <div>
-                    <span>Nome:</span>
-                    <input type="text" name="name"></br>
+            <div class="container">
+                <form>
+                    <div class="formInfo">
+                        <div class="charInfo">
+                            <div class="charBase">
+                                <span>Nome</span>
+                                <input type="text" name="name">
 
-                    <span>Raça</span>
-                    <select>
-                        <option value="1">Human</option>
-                        <option value="2">Ligth Elf</option>
-                        <option value="3">Dark Elf</option>
-                        <option value="4">Orc</option>
-                        <option value="5">Dwarf</option>
-                        <option value="6">Vampire</option>
-                        <option value="7">Werewolf</option>
-                        <option value="8">Demon</option>
-                    </select>
+                                <span>Guilda</span>
+                                <input type="text" name="name">
 
-                    <span>Classe Base</span>
-                    <select>
-                        <option value="1">Warrior</option>
-                        <option value="2">Mage</option>
-                        <option value="5">Archer</option>
-                        <option value="6">Assassin</option>
-                    </select>
+                                <span>Genero</span>
+                                <select>
+                                    <option value="1">Man</option>
+                                    <option value="2">Woman</option>
+                                    <option value="4">Unknow</option>
+                                </select>
+                            </div>
 
-                    <span>SubClasse</span>
-                    <!-- Warriors class -->
-                    <div class="subClassWarrior">
-                        <label>
-                            <input type="checkbox" />
-                            Berserker
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Paladin
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Knight
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Lancer
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            GunLancer
-                        </label>
+                            <div class="charTree">
+                                <span>Raça</span>
+                                <select>                                    
+                                    <option value="1">Human</option>
+                                    <option value="2">Ligth Elf</option>
+                                    <option value="3">Dark Elf</option>
+                                    <option value="4">Orc</option>
+                                    <option value="5">Dwarf</option>
+                                    <option value="6">Vampire</option>
+                                    <option value="7">Werewolf</option>
+                                    <option value="8">Demon</option>
+                                </select>
+
+                                <span>Classe Base</span>
+                                <select>
+                                    <option value="1">Warrior</option>
+                                    <option value="2">Mage</option>
+                                    <option value="5">Archer</option>
+                                    <option value="6">Assassin</option>
+                                </select>
+
+                                <span>SubClasse</span>
+                                <!-- Warriors class -->
+                                <div class="subClassWarrior">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Berserker
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Paladin
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Knight
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Lancer
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        GunLancer
+                                    </label>
+                                </div>
+                                <!-- Warriors class -->
+
+                                <!-- Mage class -->
+                                <div class="subClassMage">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Sorceress
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Priest
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Bard
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Summonner
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Shaman
+                                    </label>
+                                </div>
+                                <!-- Mage class -->
+
+                                <!-- Archer class -->
+                                <div class="subClassArcher">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Gunslinger
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Deadeye
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Artilerist
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Sharpshooter
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Cleric
+                                    </label>
+                                </div>
+                                <!-- Archer class -->
+
+                                <!-- Assassin class -->
+                                <div class="subClassAssassin">
+                                    <label>
+                                        <input type="checkbox" />
+                                        DeathBlade
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        ShadowHunter
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Ronin
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Reapper
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" />
+                                        Ninja
+                                    </label>
+                                </div>
+                                <!-- Assassin class -->     
+                            </div>
+                        </div>                   
+
+                        <div class="origemCharacter">
+                            <span>Origem</span></br>
+                            <span>Continente</span></br>
+                            <input type="text" name="name"></br>
+                            <span>Pais</span></br>
+                            <input type="text" name="name"></br>
+                            <span>Cidade</span></br>
+                            <input type="text" name="name"></br>
+                        </div>
+
+                        <span>Sobre o personagem</span></br>
+                        <textarea name="description"></textarea></br>
+
+                        <input type="submit" value="Cadastrar" />
                     </div>
-                    <!-- Warriors class -->
-
-                    <!-- Mage class -->
-                    <div class="subClassMage">
-                        <label>
-                            <input type="checkbox" />
-                            Sorceress
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Priest
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Bard
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Summonner
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Shaman
-                        </label>
-                    </div>
-                    <!-- Mage class -->
-
-                    <!-- Archer class -->
-                    <div class="subClassArcher">
-                        <label>
-                            <input type="checkbox" />
-                            Gunslinger
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Deadeye
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Artilerist
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Sharpshooter
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Cleric
-                        </label>
-                    </div>
-                    <!-- Archer class -->
-
-                    <!-- Assassin class -->
-                    <div class="subClassAssassin">
-                        <label>
-                            <input type="checkbox" />
-                            DeathBlade
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            ShadowHunter
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Ronin
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Reapper
-                        </label>
-                        <label>
-                            <input type="checkbox" />
-                            Ninja
-                        </label>
-                    </div>
-                    <!-- Assassin class -->
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
     </body>
 </html>

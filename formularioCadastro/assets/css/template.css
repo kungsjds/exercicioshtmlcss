@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+body {
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #0F0F0F;    
+}
+
+.formInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+select,
+select option {
+    color: #000;
+}
+
+.charInfo {
+    display: flex;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.charBase {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.charTree {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 15px;
+}
+
+input[type=checkbox] {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    font-size: 20px;
+    background-color: #000;
+    border: 1px solid #0F0F0F;
+    padding: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #3F3F3F;
+    border: 1px solid #000;    
+}
+
+select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.charBase select {
+    width: 90px;
+}
+
+.charTree select {
+    width: 100px;    
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.subClassWarrior,
+.subClassMage,
+.subClassArcher,
+.subClassAssassin {
+    display: flex;
+    flex-direction: column;
+}
+
+.subClassMage,
+.subClassArcher,
+.subClassAssassin  {
+    visibility: hidden;
+}
