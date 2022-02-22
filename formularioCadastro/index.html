@@ -14,10 +14,11 @@
         
         <section>
             <div class="container">
-                <form>
+                <form method="POST">
                     <div class="formInfo">
                         <div class="charInfo">
                             <div class="charBase">
+                                <span>Base</span></br>
                                 <span>Nome</span>
                                 <input type="text" name="name">
 
@@ -33,122 +34,132 @@
                             </div>
 
                             <div class="charTree">
-                                <span>Raça</span>
-                                <select>                                    
-                                    <option value="1">Human</option>
-                                    <option value="2">Ligth Elf</option>
-                                    <option value="3">Dark Elf</option>
-                                    <option value="4">Orc</option>
-                                    <option value="5">Dwarf</option>
-                                    <option value="6">Vampire</option>
-                                    <option value="7">Werewolf</option>
-                                    <option value="8">Demon</option>
-                                </select>
+                                <div class="charRace">
+                                    <div>
+                                        <span>Raça</span>
+                                        <select>                                    
+                                            <option value="1">Human</option>
+                                            <option value="2">Ligth Elf</option>
+                                            <option value="3">Dark Elf</option>
+                                            <option value="4">Orc</option>
+                                            <option value="5">Dwarf</option>
+                                            <option value="6">Vampire</option>
+                                            <option value="7">Werewolf</option>
+                                            <option value="8">Demon</option>
+                                        </select>
+                                    </div>
 
-                                <span>Classe Base</span>
-                                <select id="charClass">
-                                    <option value="subClassWarrior">Warrior</option>
-                                    <option value="subClassMage">Mage</option>
-                                    <option value="subClassArcher">Archer</option>
-                                    <option value="subClassAssassin">Assassin</option>
-                                </select>
+                                    <div>
+                                        <span>Classe Base</span>
+                                        <select id="charClass">
+                                            <option value="subClassWarrior">Warrior</option>
+                                            <option value="subClassMage">Mage</option>
+                                            <option value="subClassArcher">Archer</option>
+                                            <option value="subClassAssassin">Assassin</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                                <span>SubClasse</span>
+                                <span>SubClasse</span></br>
                                 <!-- Warriors class -->
+                                <span>Warrior</span>
                                 <div id="subClassWarrior">
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Berserker
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Paladin
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Knight
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Lancer
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         GunLancer
                                     </label>
                                 </div>
                                 <!-- Warriors class -->
 
                                 <!-- Mage class -->
+                                <span>Mage</span>
                                 <div id="subClassMage">
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Sorceress
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Priest
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Bard
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Summonner
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
-                                        Shaman
+                                        <input type="radio" name="classChoice" />
+                                        Necromancer
                                     </label>
                                 </div>
                                 <!-- Mage class -->
 
                                 <!-- Archer class -->
+                                <span>Archer</span>
                                 <div id="subClassArcher">
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Gunslinger
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Deadeye
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Artilerist
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Sharpshooter
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Cleric
                                     </label>
                                 </div>
                                 <!-- Archer class -->
 
                                 <!-- Assassin class -->
+                                <span>Assassin</span>
                                 <div id="subClassAssassin">
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         DeathBlade
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         ShadowHunter
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Ronin
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Reapper
                                     </label>
                                     <label>
-                                        <input type="checkbox" />
+                                        <input type="radio" name="classChoice" />
                                         Ninja
                                     </label>
                                 </div>
@@ -158,19 +169,21 @@
 
                         <div class="origemCharacter">
                             <span>Origem</span></br>
-                            <span>Continente</span></br>
-                            <input type="text" name="name"></br>
-                            <span>Pais</span></br>
-                            <input type="text" name="name"></br>
-                            <span>Cidade</span></br>
-                            <input type="text" name="name"></br>
-                        </div>
+                            <span>Continente</span>
+                            <input type="text" name="name">
+                            <span>Pais</span>
+                            <input type="text" name="name">
+                            <span>Cidade</span>
+                            <input type="text" name="name">
 
-                        <span>Sobre o personagem</span></br>
-                        <textarea name="description"></textarea></br>
+                            <span>Sobre o personagem</span>
+                            <textarea name="description"></textarea>
 
-                        <input type="submit" value="Cadastrar" />
-                    </div>
+                            <div id="submit">
+                                <input type="submit" value="Cadastrar" />
+                            </div>                            
+                        </div>   
+                    </div>                    
                 </form>
             </div>
         </section>
