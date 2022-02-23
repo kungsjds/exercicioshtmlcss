@@ -214,4 +214,5 @@ select {
 #submit input:hover {
     background-color: #bfa251;
     color: #000;
+    background: linear-gradient(0deg, white, yellow);
 }
