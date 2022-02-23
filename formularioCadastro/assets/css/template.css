@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #141312;
     margin: 0px;
     padding: 0px;
 }
@@ -13,6 +13,67 @@ header {
     display: flex;
     justify-content: center;
 
+}
+
+.containerHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.buttonHeader {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #b5b5b5;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #bfa251;
+    color: #FFF;
+}
+
+.buttonHeader input {
+    background-color: #141312;
+    border: 1px solid #bfa251;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.buttonHeader input:hover {
+    background-color: #bfa251;  
+    color: #000;
 }
 
 .container {
@@ -139,7 +200,18 @@ select {
 }
 
 #submit input {
-    width: 300px;
-    height: 50px;
+    background-color: #141312;
+    border: 1px solid #bfa251;
     margin-top: 15px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+#submit input:hover {
+    background-color: #bfa251;
+    color: #000;
 }
