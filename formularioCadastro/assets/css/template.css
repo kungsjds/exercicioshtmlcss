@@ -8,7 +8,7 @@
 * {
     box-sizing: border-box;
     color: #FFF;
-    font-family: Proxima Nova;
+    font-family: Proxima Nova;    
 }
 
 body {
@@ -44,6 +44,25 @@ header {
     align-items: center;
 }
 
+.buttonHeader a {
+    background-color: #141312;
+    border: 1px solid #bfa251;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.buttonHeader a:hover {
+    background: var(--bg-color-hover);  
+    color: #000;
+    transition: all 0.2s linear;
+}
+
 nav ul,
 nav li {
     list-style: none;
@@ -59,30 +78,14 @@ nav a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #b5b5b5;
+    text-transform: uppercase;    
 }
 
 nav a:hover {
-    border-bottom: 1px solid #bfa251;
-    color: #FFF;
-}
-
-.buttonHeader a {
-    background-color: #141312;
-    border: 1px solid #bfa251;
-    margin-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.buttonHeader a:hover {
-    background: var(--bg-color-hover);  
-    color: #000;
+    transition: all 0.3s linear;
+    box-shadow: 0 4px 2px -2px #bfa251;
+    /* border-bottom: 1px solid #bfa251; */
+    color: #FFF;    
 }
 
 .container {
@@ -100,7 +103,7 @@ nav a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: column;
-    border: 2px solid #3F3F3F;
+    /* border: 2px solid #3F3F3F; */
     padding: 10px;
 }
 
@@ -163,7 +166,7 @@ select {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    border: 2px solid #3F3F3F;
+    /* border: 2px solid #3F3F3F; */
     padding: 10px;
 }
 
@@ -198,6 +201,7 @@ select {
     background-color: #bfa251;
     color: #000;
     background: var(--bg-color-hover);
+    transition: all 0.2s linear;
 }
 
 .subClass {
@@ -221,4 +225,46 @@ select {
 .subClass label:hover {
     color: #000;
     background: var(--bg-color-hover);
+}
+
+#classPreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    background-color: #000;
+}
+
+#classPreview h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.lineSeparator {
+    margin-bottom: 25px;
+}
+
+.classImage {
+    display: flex;
+}
+
+.imgContainer {
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #FFF;    
+}
+
+.imgContainer img {
+    width: 100%;  
+    height: 100%;  
+    transition: all 0.2s linear;
+}
+
+.classImage img {          
+    margin-bottom: 40px;
+}
+
+.classImage img:hover {
+    transform: scale(1.1);
 }
