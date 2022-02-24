@@ -1,6 +1,14 @@
+:root {
+    --bg-color-hover: linear-gradient(to right, #c9a874, white, #aa8242);
+    --bg-color-input: #32353c;
+    --border-input: 1px solid #212429;
+    --border-radius-input: 5px;
+}
+
 * {
     box-sizing: border-box;
     color: #FFF;
+    font-family: Proxima Nova;
 }
 
 body {
@@ -60,7 +68,7 @@ nav a:hover {
     color: #FFF;
 }
 
-.buttonHeader input {
+.buttonHeader a {
     background-color: #141312;
     border: 1px solid #bfa251;
     margin-right: 10px;
@@ -69,26 +77,22 @@ nav a:hover {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.buttonHeader input:hover {
-    background-color: #bfa251;  
+.buttonHeader a:hover {
+    background: var(--bg-color-hover);  
     color: #000;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    background-color: #0F0F0F;    
+    background-color: #212429    
 }
 
 .formInfo {
     display: flex;
-}
-
-select,
-select option {
-    color: #000;
 }
 
 .charInfo {
@@ -112,63 +116,37 @@ select option {
 }
 
 input[type=text] {
-    padding: 5px;
+    padding: 7px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #000;
-    font-size: 15px;
-}
-
-input[type=checkbox] {
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #000;
-    font-size: 15px;
-}
-
-input[type=submit] {
     font-size: 20px;
-    background-color: #000;
-    border: 1px solid #0F0F0F;
-    padding: 5px;
-}
-
-input[type=submit]:hover {
-    background-color: #3F3F3F;
-    border: 1px solid #000;    
+    background: var(--bg-color-input);
+    border: var(--border-input);
+    border-radius: var(--border-radius-input);
 }
 
 select {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 5px;
-    font-size: 15px;
+    padding: 7px;
+    font-size: 20px;
 }
 
 .charBase select {
     width: 90px;
+    background: var(--bg-color-input);
+    border: var(--border-input);
+    border-radius: var(--border-radius-input);
 }
 
 .charTree select {
-    width: 100px;        
+    width: 110;        
     display: flex;
     flex-direction: column;
-}
-
-#subClassWarrior,
-#subClassMage,
-#subClassArcher,
-#subClassAssassin {
-    display: flex;
-}
-
-#subClassWarrior label,
-#subClassMage label,
-#subClassArcher label,
-#subClassAssassin label {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background: var(--bg-color-input);
+    border: var(--border-input);
+    border-radius: var(--border-radius-input);
 }
 
 .charRace {
@@ -192,6 +170,9 @@ select {
 .origemCharacter textarea {
     width: 600px;
     height: 262px;
+    background: var(--bg-color-input);
+    border: var(--border-input);
+    border-radius: var(--border-radius-input);
 }
 
 #submit {
@@ -208,11 +189,36 @@ select {
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 20px;
+    font-size: 20px;    
+    cursor: pointer;    
+    text-transform: uppercase;
 }
 
 #submit input:hover {
     background-color: #bfa251;
     color: #000;
-    background: linear-gradient(0deg, white, yellow);
+    background: var(--bg-color-hover);
+}
+
+.subClass {
+    display: flex;
+}
+
+.subClass label {    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #141312;
+    border: 1px solid #bfa251;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.subClass label:hover {
+    color: #000;
+    background: var(--bg-color-hover);
 }
