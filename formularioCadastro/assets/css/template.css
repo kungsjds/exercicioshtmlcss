@@ -229,15 +229,17 @@ select {
 
 #classPreview {
     display: flex;
-    flex-direction: column;
-    justify-content: center;    
+    flex-direction: column; 
     align-items: center;
     background-color: #000;
+    height: 1100px;
 }
 
 #classPreview h1 {
+    margin-top: 0px;
     margin-bottom: 15px;
     font-size: 50px;
+    text-transform: uppercase;
 }
 
 .lineSeparator {
@@ -246,6 +248,7 @@ select {
 
 .classImage {
     display: flex;
+    height: 990px;
 }
 
 .imgContainer {
@@ -253,6 +256,10 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 350px;
+    height: 100%;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .imgContainer a {
@@ -261,7 +268,7 @@ select {
 }
 
 .imgLink {
-    width: 300px;
+    width: 100%;
     margin: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 5px #FFF;    
@@ -293,8 +300,7 @@ select {
     background-image: radial-gradient(90% 100px at 50% 0px, rgb(177, 97, 3), transparent 40%);    
     opacity: 0.8;
     transform: translateY(-10px);
-    transition-duration: 250ms;
-    
+    transition-duration: 250ms;    
 }
 
 .classTitle:hover {
@@ -314,4 +320,31 @@ select {
     margin: 0px;
     padding: 0px;
     text-transform: uppercase;
+}
+
+.brokenLine {
+    border: 5px;
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(177, 97, 3), transparent);    
+    margin: 16px 0px;
+    opacity: 0.6;  
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;  
+}
+
+.iconClass {
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.iconClass img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 250ms;
 }
