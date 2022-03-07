@@ -88,6 +88,21 @@ nav a:hover {
     color: #FFF;    
 }
 
+#classPreview {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #000;
+    height: 1200px;
+}
+
+#classPreview h1 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -125,11 +140,12 @@ nav a:hover {
     flex-direction: column;
 }
 
-input[type=text] {
+input[type=text],
+textarea {
     padding: 7px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #000;
+    color: #FFF;
     font-size: 20px;
     background: var(--bg-color-input);
     border: var(--border-input);
@@ -180,9 +196,7 @@ select {
 .origemCharacter textarea {
     width: 600px;
     height: 262px;
-    background: var(--bg-color-input);
-    border: var(--border-input);
-    border-radius: var(--border-radius-input);
+    resize: none;
 }
 
 #submit {
@@ -238,21 +252,6 @@ select {
 .active {
     color: #000;
     background: var(--bg-color-hover);
-}
-
-#classPreview {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    background-color: #000;
-    height: 1100px;
-}
-
-#classPreview h1 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 50px;
-    text-transform: uppercase;
 }
 
 .lineSeparator {
@@ -375,6 +374,26 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 12px;
+}
+
+.navToTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language {
+    padding-top: 12px;    
+}
+
+.language span {
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+    font-weight: 700;
+    transition: color .35s ease;
 }
 
 .navToTop a {
@@ -392,8 +411,7 @@ footer {
     color: rgb(145, 145, 145);
 }
 
-.navToTop a:hover,
-.navToTop img:hover {
+.navToTop a:hover {
     color: white;
 }
 
