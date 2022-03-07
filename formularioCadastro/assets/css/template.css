@@ -379,12 +379,8 @@ footer {
 
 .navToTop a {
     display: block;
-    text-align: center;
-    align-items: center;
     padding: 1rem;
     transition: color .35s ease;
-    position: relative;
-    z-index: 0;
     filter: drop-shadow(0 0 6px #000000);
     font-weight: 700;
     font-size: .875rem;
