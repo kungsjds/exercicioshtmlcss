@@ -5,6 +5,7 @@
     --border-radius-input: 5px;
 }
 
+
 * {
     box-sizing: border-box;
     color: #FFF;
@@ -411,9 +412,10 @@ footer {
     color: rgb(145, 145, 145);
 }
 
-.navToTop a:hover {
+.navToTop a:hover {  
     color: white;
 }
+
 
 .navToTop img {
     display: block;
@@ -425,4 +427,63 @@ footer {
     z-index: -1;
     opacity: .5;
     transition: opacity .35s ease-in-out;
+}
+
+.imgAddres {    
+    display: flex;   
+    align-items: center;
+    width: 220px;
+    height: 50px;
+}
+
+.logoAmazon {
+    width: 124px;
+    height: 20px;
+}
+
+.logoAmazon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logoSmilegate {
+    width: 124px;
+    height: 30px;   
+}
+
+.logoSmilegate img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footerLegal a {
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+    font-weight: 700;
+    transition: color .35s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerLegal a:hover {
+    color: white;
+}
+
+.socialLink {
+    display: flex;    
+}
+
+.logoSocial {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.logoSocial img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
