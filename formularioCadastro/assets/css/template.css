@@ -12,7 +12,7 @@
     font-family: Proxima Nova,Arial,sans-serif;    
 }
 
-body {
+body {    
     background-color: #141312;
     margin: 0px;
     padding: 0px;
@@ -114,6 +114,22 @@ nav a:hover {
     text-transform: uppercase;
 }
 
+.logoGunner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.logoGunner h1 {
+    font-family:  Vendome, serif;;
+    font-weight: 500;
+    font-size: .700em;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -165,6 +181,7 @@ textarea {
     background: var(--bg-color-input);
     border: var(--border-input);
     border-radius: var(--border-radius-input);
+    box-shadow: 0px 0px 10px #000;
 }
 
 select {
@@ -182,6 +199,7 @@ select {
     font-size: 0.9em;
     font-weight: 800;
     letter-spacing: 0.1em;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .charTree select {
@@ -194,6 +212,7 @@ select {
     font-size: 0.9em;
     font-weight: 800;
     letter-spacing: 0.1em;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .charRace {
@@ -229,7 +248,7 @@ select {
 }
 
 #submit input {
-    background-color: #141312;
+    background-color: #212429;
     border: 1px solid #bfa251;
     margin-top: 15px;
     margin-right: 10px;
@@ -242,6 +261,7 @@ select {
     font-size: 0.99em;
     font-weight: 800;
     letter-spacing: 0.1em;
+    box-shadow: 0px 0px 10px #000;
 }
 
 #submit input:hover {
@@ -259,7 +279,7 @@ select {
 .subClass label {    
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #141312;
+    background-color: #212429;
     border: 1px solid #bfa251;
     margin-right: 10px;
     padding-top: 5px;
@@ -271,6 +291,7 @@ select {
     font-size: 0.99em;
     font-weight: 800;
     letter-spacing: 0.1em;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .subClass label:hover {
@@ -315,8 +336,9 @@ select {
     width: 100%;
     margin: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 5px #FFF;    
+    /* box-shadow: 0px 0px 5px #FFF;     */
     text-decoration: none;
+    box-shadow: 0px 0px 5px #bfa251;
 }
 
 .imgLink img {
@@ -453,7 +475,7 @@ footer {
     position: absolute;
     top: 50%;
     left: calc(50% - 0.1em);
-    height: 52px;
+    height: 55px;
     transform: translate(-50%,-50%);
     z-index: -1;
     opacity: .5;
@@ -468,8 +490,9 @@ footer {
 }
 
 .logoAmazon {
-    width: 124px;
+    width: 50px;
     height: 20px;
+    margin-right: 20px;
 }
 
 .logoAmazon img {
@@ -542,4 +565,8 @@ footer {
     height: 24px;
     text-align: center;    
     margin-top: 27px;
+}
+
+.marginBottom {
+    margin-bottom: 10px;
 }
