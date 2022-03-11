@@ -38,10 +38,6 @@ header {
     align-items: center;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-}
 .buttonHeader {
     display: flex;
     align-items: center;
@@ -59,12 +55,12 @@ header {
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: 800;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;    
 }
 
 .buttonHeader a:hover {
     background: var(--bg-color-hover);  
-    color: #000;
+    color: #000;    
     transition: all 0.2s linear;
     text-shadow: 0 1px #fff79c;
 }
@@ -278,7 +274,6 @@ select {
 
 .subClass label {    
     margin-top: 10px;
-    margin-bottom: 10px;
     background-color: #212429;
     border: 1px solid #bfa251;
     margin-right: 10px;
@@ -286,16 +281,15 @@ select {
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    cursor: pointer;
-    transition: all 0.2s linear;
+    cursor: pointer;    
     font-size: 0.99em;
     font-weight: 800;
-    letter-spacing: 0.1em;
     box-shadow: 0px 0px 10px #000;
 }
 
 .subClass label:hover {
     color: #000;
+    transition: all 0.2s linear;
     background: var(--bg-color-hover);
     text-shadow: 0 1px #fff79c
 }
@@ -321,8 +315,7 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 100%;
+    max-width: 350px;
     margin-right: 25px;
     margin-left: 25px;    
 }
@@ -336,7 +329,6 @@ select {
     width: 100%;
     margin: 20px;
     overflow: hidden;
-    /* box-shadow: 0px 0px 5px #FFF;     */
     text-decoration: none;
     box-shadow: 0px 0px 5px #bfa251;
 }
@@ -447,7 +439,6 @@ footer {
     color: #b5b5b5;
     font-size: 12px;
     font-weight: 700;
-    transition: color .35s ease;
 }
 
 .navToTop a {
