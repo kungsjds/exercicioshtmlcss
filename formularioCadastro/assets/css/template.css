@@ -97,10 +97,11 @@ nav a:hover {
 
 #classPreview {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;    
     align-items: center;
     background-color: #000;
-    height: 1200px;
+    width: auto;
+    height: auto;
 }
 
 #classPreview h1 {
@@ -126,10 +127,15 @@ nav a:hover {
     letter-spacing: 0.02em;
 }
 
+.formRegister {
+    width: auto;
+    height: auto;
+}
+
 .container {
     display: flex;
     justify-content: center;
-    background-color: #212429    
+    background-color: #212429;   
 }
 
 .description {
@@ -140,31 +146,37 @@ nav a:hover {
     max-width: 640px;
 }
 
-.formInfo {
+/* .formInfo {
     display: flex;
-}
+    justify-content: center;
+    width: auto;
+    min-height: 500px;
+    flex-wrap: wrap;    
+    margin-top: 20px;
+    margin-bottom: 20px;  
+} */
 
 .charInfo {
-    display: flex;    
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-direction: column;
-    padding: 10px;
+    display: flex;   
+    flex-direction: column; 
+    margin-left: 20px;
+    margin-right: 20px;    
     font-size: 0.9em;
     font-weight: 800;
     letter-spacing: 0.1em;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;  
 }
 
 .charBase {
     display: flex;
-    flex-direction: column;
-    margin-right: 20px;    
+    flex-direction: column; 
 }
 
 .charTree {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 input[type=text],
@@ -178,6 +190,7 @@ textarea {
     border: var(--border-input);
     border-radius: var(--border-radius-input);
     box-shadow: 0px 0px 10px #000;
+    width: auto;
 }
 
 select {
@@ -219,21 +232,18 @@ select {
     margin-right: 10px;
 }
 
-.origemCharacter {
+/* .origemCharacter {
     display: flex;
     flex-direction: column;    
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 646.39px;;
     margin-left: 20px;
-    /* border: 2px solid #3F3F3F; */
-    padding: 10px;
+    margin-right: 20px;  
     font-size: 0.9em;
     font-weight: 800;
-    letter-spacing: 0.1em;
-}
+    letter-spacing: 0.1em;    
+} */
 
-.origemCharacter textarea {
-    width: 600px;
+.charInfo textarea {
     height: 262px;
     resize: none;
 }
@@ -270,6 +280,7 @@ select {
 
 .subClass {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .subClass label {    
@@ -306,14 +317,24 @@ select {
 
 .classImage {
     display: flex;
-    height: 990px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.classImage img {          
+    margin-bottom: 40px;
+}
+
+.classImage img:hover {
+    transform: scale(1.1);
 }
 
 .imgContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     max-width: 350px;
     margin-right: 25px;
@@ -339,19 +360,11 @@ select {
     transition: all 0.2s linear;
 }
 
-.classImage img {          
-    margin-bottom: 40px;
-}
-
-.classImage img:hover {
-    transform: scale(1.1);
-}
-
 .classTitle {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 20%;
+    width: auto;
+    height: auto;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -414,15 +427,24 @@ select {
 footer {
     display: flex;
     flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.containerAddress {
+    display: flex;
+}
+
+.flexRowCenter {
+    display: flex;
+    justify-content: center;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .containerFooter {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    padding-right: 45px;
-    padding-left: 45px;
-    padding-bottom: 12px;
 }
 
 .navToTop {
@@ -558,6 +580,10 @@ footer {
     margin-top: 27px;
 }
 
-.marginBottom {
+.marginBottom10 {
     margin-bottom: 10px;
+}
+
+.marginTop50 {
+    margin-top: 50px;
 }
