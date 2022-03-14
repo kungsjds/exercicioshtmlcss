@@ -65,6 +65,20 @@ header {
     text-shadow: 0 1px #fff79c;
 }
 
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.mmLine {
+    height: 3px;
+    background-color: #b5b5b5;
+}
+
 nav ul,
 nav li {
     list-style: none;
@@ -611,6 +625,29 @@ footer {
     .marginBottom25 {
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 979px) {
+
+    .containerHeader nav ul {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        display: none;
+        background-color: #141312;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: -5%;
+        right: -30px;
+        
     }
 
 }
