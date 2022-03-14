@@ -432,19 +432,31 @@ footer {
 
 .containerAddress {
     display: flex;
-}
-
-.flexRowCenter {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
     padding-left: 45px;
     padding-right: 45px;
+    width: auto;    
 }
 
 .containerFooter {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.marginTop25 {
+    margin-top: 25px;
+}
+
+.marginBottom25 {
+    margin-bottom: 25px;
 }
 
 .navToTop {
@@ -574,7 +586,7 @@ footer {
     color: #b5b5b5;
     font-size: 12px; 
     font-weight: 700;
-    width: 997px;
+    width: auto;
     height: 24px;
     text-align: center;    
     margin-top: 27px;
@@ -586,4 +598,19 @@ footer {
 
 .marginTop50 {
     margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+
+    .containerAddress,
+    .containerFooter {
+        flex-direction: row;        
+    }
+
+    .marginTop25,
+    .marginBottom25 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
 }
