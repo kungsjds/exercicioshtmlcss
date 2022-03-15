@@ -4,8 +4,20 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=0", initial-scale=1.0 />
         <link rel="stylesheet" href="assets/css/template.css" />
-        <script src="assets/js/hideShow.js"></script>
         <title>Criando o Personagem</title>
+
+        <script>
+            window.onload = function() {
+                document.querySelector(".menuMobile").addEventListener("click", function() {
+                    if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    } else {
+                        document.querySelector(".menu nav ul").style.display ='flex';
+                    }
+                })
+            }
+        </script>
+
     </head>
     <body>
         <header>
@@ -13,10 +25,11 @@
                 <div class="logo">
 
                     <a href="">
-                        <img src="assets/images/LostArkLogo.png" width="200px" height="50px"/>
+                        <img class="logoDesktop" src="assets/images/LostArkLogo.png" width="200px" height="50px"/>
+                        <img class="logoMobile" src="assets/images/lostArkIcon.ico">
                     </a>
 
-                    <div>
+                    <div class="menu">
                         <nav>
                             <div class="menuMobile">
                                 <div class="mmLine"></div>

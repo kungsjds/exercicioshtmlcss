@@ -36,6 +36,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 50px;
+}
+
+.logoMobile {
+    display: none;
+    width: 35px;
+    height: 37px;
 }
 
 .buttonHeader {
@@ -67,15 +74,17 @@ header {
 
 .menuMobile {
     display: none;
-    width: 40px;
-    height: 40px;
-    margin-top: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 43px;   
     margin-bottom: 40px;
     margin-right: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .mmLine {
-    height: 3px;
+    height: 1px;
     background-color: #b5b5b5;
 }
 
@@ -601,7 +610,7 @@ footer {
     font-size: 12px; 
     font-weight: 700;
     width: auto;
-    height: 24px;
+    height: auto;
     text-align: center;    
     margin-top: 27px;
 }
@@ -636,6 +645,7 @@ footer {
         position: absolute;
         width: 100%;
         left: 0;
+        top: 3em;
         display: none;
         background-color: #141312;
     }
@@ -645,8 +655,28 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         position: absolute;
-        top: -5%;
-        right: -30px;
+        top: -2.2em;
+        right: -2em;        
+    }
+
+    .buttonHeader {
+        margin-right: 2em;
+    }
+
+    .logoMobile {
+        display: flex;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+}
+
+@media (max-width: 435px) {
+
+    body, html {
+        min-width: 435px;
         
     }
 
