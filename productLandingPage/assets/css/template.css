@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     max-width: 2560px;
+    font-family: Arial,sans-serif; 
 }
 
 body {
@@ -44,23 +45,25 @@ header {
 
 #banner {
     display: flex;
+    justify-content: center;
+}
+
+.playstationStore {
+    display: flex;
+    justify-content: center;    
+}
+
+.containerBanner {
+    display: flex;
     justify-content: flex-start;
     background-image: url(../images/play5.jpg);
     background-position: center;
     background-size: cover;
     height: 800px;
     border-bottom: 1px solid #0070cc;
+    width: 100%;
     max-width: 1920px;
     max-height: 800px;
-}
-
-.flexRowCenter {
-    display: flex;
-    justify-content: center;
-}
-
-.container {
-    max-width: 1920px;
 }
 
 .description {
@@ -68,6 +71,7 @@ header {
     top: 30%;
     text-transform: uppercase;
     padding-left: 5px;
+    height: 300px;
 }
 
 .description h1 {
@@ -76,6 +80,7 @@ header {
     text-shadow: 0px 0px 3px #000;
     border-bottom: 1px solid #0070cc;
     margin-bottom: 25px;
+    font-family: none;
 }
 
 .description p {
@@ -104,34 +109,35 @@ header {
     background-color: #0070cc;
 }
 
-.productImage {
+.container {
     display: flex;
     max-width: 1920px;
+}
+
+.productImage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1920px;
     width: 100%;
-    height: 80%;
-    /* border-bottom: 1px solid #44d62c;     */
+    margin-bottom: 40px;
 }
 
 .productImage img {
-    width: 100%;
-    height: 100%;
+    min-width: 290px;
+    max-height: 290px;
+    max-width: 290px;
+    max-height: 290px;
+    width: 290px;
+    height: 290px;    
 }
 
 .product {
     max-width: 400px;
     max-height: 400px;
     margin-bottom: 55px;
-}
-
-.product figure {
-    width: 100%;
-    height: 100%;
-    margin: 0px;    
-    padding: 10px;
-}
-
-.justifySpaceAround {
-    justify-content: space-around;
+    padding: 15px;
+    object-fit: cover;
 }
 
 .width1920{
@@ -142,31 +148,142 @@ header {
     background-color: #252525;
 }
 
-.product figure figcaption {
-    color: white;    
-    padding: 10px;
-    background-color: #111111;
+.product figure {    
+    transition-duration: 250ms;
 }
 
-.product figcaption strong {
-    font-size: 1.5em;
-    text-transform: uppercase;
+.product figure:hover {
+    transform: translateY(-20px);  
+    /* Translates the element by the given amount along the Y axis.   */
+    /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform */
 }
 
 .product figure a {
     text-decoration: none;
-    color: white;
+    color: white;    
 }
 
-.product figcaption span {
+.product figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    border-bottom: 1px solid #0070cc;
+}
+
+.product figure figcaption {
+    color: white;    
+    padding: 10px;
+    background-color: #111111;
+    font-size: 0.9em;
+    font-weight: 200;
+    font-family: Arial,sans-serif; 
+}
+
+.product figcaption strong {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: Arial,sans-serif; 
+}
+
+.product figcaption label {
     color: #0070cc;
 }
 
-.product figcaption span:hover {
+.product figcaption p {
+    color: #757575;
+}
+
+.product figcaption label:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #111111;
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+
+.footerContainer {
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.footerLink {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.footerShortcut {
+    display: block;
+    color: white;
+}
+
+.footerShortcut ul,
+.footerShortcut ul li {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.footerShortcut ul li {
+    list-style: none;
+}
+
+.footerShortcut ul li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.footerShortcut a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footerCopyrightLegalTerm {
+    color: #757575;
+    border-top: 1px solid #757575;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.copyright {
+    display: inline-flex;
+    margin-right: 30px;
+}
+
+.legalTerm {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.legalTerm ul {
+    display: flex;
+    margin: 0;
+    padding: 0;    
+}
+
+.legalTerm ul li {
+    list-style: none;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.legalTerm a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.legalTerm a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Exemplos de display */
+/* https://quirksmode.org/css/css2/display.html#playground */
