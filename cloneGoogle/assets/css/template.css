@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu div {
+    margin: 5px;
+}
+
+.perfil {
+    width: 45px;
+    height: 45px;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.perfil img:hover {
+    background-color: #d7d7d7;
+}
+
+.apps {
+    width: 45px;
+    height: 45px;   
+}
+
+.apps img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.apps img:hover {
+    background-color: #d7d7d7;
+    border-radius: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: block;
+    margin-block-start: 10%;
+    height: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.addressLink {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+.addressLink nav ul {
+    display: flex;
+}
+
+.addressLink ul {
+    list-style: none;    
+    padding: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.addressLink ul li a {
+    text-decoration: none;
+    color: #A9A9A9;
+}
