@@ -24,11 +24,25 @@ header {
     height: 100%;
 }
 
+.containerMenuMobile {
+    display: none;
+}
+
+.menuMobile {
+    width: 35px;
+    height: 35px;
+}
+
+.mmLine {
+    height: 1px;
+    background-color: #757575;
+}
+
 .menu nav  {
     display: flex;
 }
 
-.menu nav ul li {
+.menu nav li {
     list-style: none;
 }
 
@@ -358,6 +372,93 @@ footer {
 .legalTerm a:hover {
     color: white;
     text-decoration: underline;
+}
+
+@media (max-width:924px) {
+
+    .menu {
+        display: none;
+    }
+
+    .containerMenuMobile {
+        display: flex;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 1.2em;          
+    }
+
+    .containerMenuMobile ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;      
+        justify-content: space-around;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        margin: 0; 
+        padding: 25px;
+        
+    }
+
+    .containerMenuMobile ul li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #757575;
+    }
+
+}
+
+@media (max-width: 949px) {
+    .footerCopyrightLegalTerm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .legalTerm {
+        margin-top: 25px;
+    }
+
+    .legalTerm,
+    .legalTerm ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 797px) {
+    .footerLink {
+        flex-wrap: wrap;        
+    }
+
+    .footerShortcut {
+        margin-right: 10px;
+    }    
+
+    .footerSocial {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 508px) {
+    .containerBanner h1{
+        font-size: 3em;
+    }
+
+    .footerShortcut {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 409px) {
+    .containerBanner h1{
+        font-size: 2em;
+    }
 }
 
 /* Exemplos de display */

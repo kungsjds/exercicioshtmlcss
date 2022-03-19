@@ -5,32 +5,83 @@
         <meta name="viewport" content="width=device-width, user-scalabel=0", initial-scale="1.0" />
         <link rel="stylesheet" href="assets/css/template.css" />
         <title>Product Landing Page Razer</title>
+
+        <script>
+            window.onload = function() {
+                document.querySelector(".menuMobile").addEventListener("click", function() {
+                    if (document.querySelector(".containerMenuMobile nav ul").style.display == "flex") {
+                        document.querySelector(".containerMenuMobile nav ul").style.display = "none";
+                    } else {
+                        document.querySelector(".containerMenuMobile nav ul").style.display = "flex";
+                    }
+                })
+            }
+        </script>
     </head>    
     <body>
         <header>
             <div class="logo">
                 <a href=""><img src="assets/images/playstationLogo.png" /></a>
             </div>
-            <div class="menu">
-                <nav>  
+            <div class="menu">      
+                <nav>                     
                     <nav>
                         <ul>
-                            <li><a class="menuLink" href="">PC</a></li>
+                            <li>
+                                <a class="menuLink" href="">games &or;</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- https://www.w3bai.com/pt/charsets/ref_utf_arrows.html -->
+                    <!-- Link com referências para caracteres em HTML -->
+
+                    <nav>
+                        <ul>
+                            <li><a class="menuLink" href="">hardware &or;</a></li>
                         </ul>
                     </nav>
 
                     <nav>
                         <ul>
-                            <li><a class="menuLink" href="">CONSOLE</a></li>
+                            <li><a class="menuLink" href="">services &or;</a></li>
                         </ul>
                     </nav>
 
                     <nav>
                         <ul>
-                            <li><a class="menuLink" href="">MOBILE</a></li>
+                            <li><a class="menuLink" href="">services &or;</a></li>
                         </ul>
                     </nav>
                     
+                    <nav>
+                        <ul>
+                            <li><a class="menuLink" href="">shop &or;</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <ul>
+                            <li><a class="menuLink" href="">support &or;</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+            <div class="containerMenuMobile">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mmLine"></div>
+                        <div class="mmLine"></div>
+                        <div class="mmLine"></div>
+                    </div>
+
+                    <ul>
+                        <li><a class="menuLink" href="">games &or;</a></li>
+                        <li><a class="menuLink" href="">hardware &or;</a></li>
+                        <li><a class="menuLink" href="">services &or;</a></li>
+                        <li><a class="menuLink" href="">shop &or;</a></li>
+                        <li><a class="menuLink" href="">support &or;</a></li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -220,7 +271,7 @@
                         </div>
                     </div>
                     <div class="footerSocial">  
-                        <span>For gamers by gamers</span>
+                        <span>For gamers by gamer</span>
                         <a href=""><img src="assets/images/twitchLogo.png" /></a>
                         <a href=""><img src="assets/images/youtubeLogo.png" /></a>
                         <a href=""><img src="assets/images/twitterLogo.png" /></a>
