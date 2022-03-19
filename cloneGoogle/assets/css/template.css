@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #202124;
 }
 
 .menu {
@@ -32,7 +33,7 @@ body {
 }
 
 .perfil img:hover {
-    background-color: #d7d7d7;
+    background-color: #2f3034;
 }
 
 .apps {
@@ -49,13 +50,13 @@ body {
 }
 
 .apps img:hover {
-    background-color: #d7d7d7;
+    background-color: #2f3034;
     border-radius: 40px;
 }
 
 .menu a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 .menu a:hover {
@@ -75,8 +76,49 @@ section {
     align-items: center;
 }
 
+.logo {
+    margin-bottom: 25px;
+}
+
+.divTextSearch {
+    display: flex;
+    padding: 10px 15px;
+    border: 1px solid #5f6368;
+    border-radius: 40px;
+}
+
+.divTextSearch img {
+    width: 17px;
+    height: 17px;
+}
+
+.divTextSearch input {
+    background: transparent;
+    border: 0;
+    width: 450px;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+/* Remover bordas de seleção do input */
+.divTextSearch input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
 .button {
     cursor: pointer;
+    padding: 7px 17px;  
+    background-color: #303134;  
+    color: white;
 }
 
 .containerFooter {
@@ -89,14 +131,15 @@ section {
     padding-right: 35px;
     padding-top: 3px;
     padding-bottom: 3px;
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #c7c7c7;
+    background-color: #171717;
+    border-bottom: 1px solid #202124;
+    color: #9aa0a6;
 }
 
 .addressLink {
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: #171717;
 }
 
 .addressLink nav ul {
@@ -108,11 +151,9 @@ section {
     padding: 0;
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
 .addressLink ul li a {
     text-decoration: none;
-    color: #A9A9A9;
+    color: #9aa0a6
 }
