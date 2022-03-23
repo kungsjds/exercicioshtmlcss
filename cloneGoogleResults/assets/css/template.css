@@ -135,14 +135,10 @@ header {
 .searchMenu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 145px;
     width: 696px;    
     height: 50px;
-}
-
-.searchMenu nav {
-    margin: 0;
 }
 
 .searchMenu nav ul {
@@ -155,6 +151,7 @@ header {
     display: flex;
     list-style: none;    
     margin: 0px 15px;    
+    font-size: 0.9em;
 }
 
 .searchMenu nav ul li img {
@@ -191,6 +188,7 @@ header {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 1px;
+    font-size: 0.9em;
 }
 
 .tools button:hover {
@@ -204,6 +202,7 @@ header {
     flex-direction: column;
     color: var(--light-grey-color);
     width: 696px;
+    max-width: 696px;
     margin-left: 160px;
 }
 
@@ -350,4 +349,30 @@ address a span {
 
 .paddingLeft {
     padding-left: 20px;
+}
+
+.containerPages {
+    display: flex;
+    justify-content: center;
+    width: 696px;
+    max-width: 696px;
+    margin-left: 160px;
+    margin-bottom: 35px;
+}
+
+.pages a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.pages label {
+    color: white;
+    font-size: 1.8em;
 }
