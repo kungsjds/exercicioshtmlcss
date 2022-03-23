@@ -2,6 +2,7 @@
     --blue-color: #8ab4f8;
     --grey-color: #303134;
     --light-grey-color: #9aa0a6;
+    --most-light-grey-color: #bdc1c6;
 }
 
 * {
@@ -206,23 +207,147 @@ header {
     margin-left: 160px;
 }
 
+.resultCount {
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
 .result {
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
 }
 
 .translate {
-    text-decoration: none;
+    display: inline-block;
     color: var(--blue-color);
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 0.9em;
+}
+
+.translate span {
+    padding-right: 15px;
 }
 
 .translate:hover {
     text-decoration: underline;
 }
 
+.about {
+    display: inline-block;    
+}
+
+.about img {
+    width: 13px;
+    height: 14px;
+}
+
+.span {
+    display: inline-block;
+    color: var(--light-grey-color);
+    font-size: 0.9em;
+}
+
 .resultLink {
-    text-decoration: none;
-    color: var(--blue-color);
+    text-decoration: none;    
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.resultLink:hover {
+    text-decoration: underline;
+}
+
+.resultLink p {
+    color: var(--blue-color);
+    margin: 10px 0px 10px;
+    font-size: 1.3em;
+}
+
+.top1 label {
+    cursor: pointer;    
+    color: var(--most-light-grey-color);
+    font-size: 0.9em;
+}
+
+.summary {
+    display: block;
+    color: var(--most-light-grey-color);
+    font-size: 0.91em;    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    min-width: 1012px;
+}
+
+.containerFooter {
+    padding-top: 10px;
+}
+
+.locality {
+    border-bottom: 1px solid #212327;
+    font-size: 0.9em;
+}
+
+address {
+    display: flex;
+    margin-left: 160px;
+    font-style: normal;
+}
+
+address a {
+    color: #bdc1c6;
+    text-decoration: none;
+}
+
+address a span {
+    color: #48a1ff;
+}
+
+.city{
+    padding-top: 15px;    
+    padding-left: 10px;
+    padding-bottom: 10px;    
+}
+
+.country {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: var(--light-grey-color);
+    border-right: 1px solid #212327;
+}
+
+.legal {
+    margin-left: 160px;
+}
+
+.legal nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 27px;
+}
+
+.legal nav ul li {
+    list-style: none;        
+}
+
+.legal a {
+    text-decoration: none;
+    color: var(--light-grey-color);    
+    font-size: 0.9em;
+}
+
+.legal a:hover {
+    color: #bdc1c6;
+}
+
+.paddingLeft {
+    padding-left: 20px;
 }
