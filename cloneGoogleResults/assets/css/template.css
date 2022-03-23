@@ -313,6 +313,11 @@ address a span {
     padding-bottom: 10px;    
 }
 
+.city img {
+    width: 10px;
+    height: 10px;
+}
+
 .country {
     padding-top: 15px;
     padding-right: 10px;
@@ -357,7 +362,8 @@ address a span {
     width: 696px;
     max-width: 696px;
     margin-left: 160px;
-    margin-bottom: 35px;
+    margin-top: 10px;
+    margin-bottom: 45px;
 }
 
 .pages a {
@@ -369,10 +375,39 @@ address a span {
 }
 
 .pages a:hover {
-    text-decoration: underline;
+    text-decoration: underline;    
 }
 
 .pages label {
     color: white;
-    font-size: 1.8em;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+.pages span {
+    font-size: 0.9em;
+    padding-top: 3px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.next {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.seta {
+    margin-top: 10px;
+}
+
+#descNext {
+    display: flex;
+    padding-top: 7px;
 }
