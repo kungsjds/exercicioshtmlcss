@@ -5,12 +5,12 @@
 <h3>
 Utilizado para prática:
 
-position
-transform
-background-image
-linear-gradient
-::before
-::after
+position;<br>
+transform;<br>
+background-image;<br>
+linear-gradient;<br>
+::before;<br>
+::after.<br>
 
 </h3>
 
