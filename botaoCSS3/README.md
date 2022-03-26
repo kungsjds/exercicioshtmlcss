@@ -5,13 +5,13 @@
 <h3>
 Utilizado para prática:
 
-transform;
-background-image;
-radial-gradient;
-text-shadow;
-box-shadow;
-font-size;
-font-weight;
+transform;<br>
+background-image;<br>
+radial-gradient;<br>
+text-shadow;<br>
+box-shadow;<br>
+font-size;<br>
+font-weight;<br>
 letter-spacing.
 </h3>
 
