@@ -2,8 +2,9 @@
 
 <h1>Como fazer uma tabela zebrada, utilizando :nth-child() pelo CSS</h1>
 
-<h2>----Reference----<h2>
+<h2>----Reference----</h2>
 https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+
 
 <h2>Exemplos:</h2>
 
