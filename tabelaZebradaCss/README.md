@@ -3,7 +3,7 @@
 <h1>Como fazer uma tabela zebrada, utilizando :nth-child() pelo CSS</h1>
 
 <h2>----Reference----<h2>
-<h3>https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child<h3> 
+https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
 
 <h2>Exemplos:</h2>
 
@@ -12,8 +12,7 @@ table tr td:nth-child(1) {
     text-align: center;
 }
 
-</h3>Aplica o efeito nos valores a partir do elemento 2 em diante</h3>
-table tr td:nth-child(n+2),
+<h3>Aplica o efeito nos valores a partir do elemento 2 em diante</h3>
 table thead th:nth-child(n+2) {
     text-align: left;
 }
