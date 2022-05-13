@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #171717;
+}
+
+.container {
+    display: grid;
+    max-width: 100vw;
+    height: 400px;
+    /* grid-gap: 0px 10px; */
+    grid-template-areas: 
+    
+        "itemJ1 itemJ1 itemJ1 itemO1 itemO1 itemO1 itemN1 itemN1 itemN1 itemA1 itemA1 itemT1 itemT1 itemT1 itemH1 itemAA1 itemAA1 itemNN1 itemNN1"
+        ".      itemJ2 .      itemO2 .      itemO3 itemN2 .      itemN3 itemA2 itemA2 itemT2 itemT2 itemT2 itemH2 itemAA2 itemAA2 itemNN2 itemNN2"
+        ".      itemJ2 .      itemO2 .      itemO3 itemN2 .      itemN3 itemA3 itemA3 itemT3 itemT3 itemT3 itemH3 itemAA3 itemAA3 itemNN3 itemNN3"
+        "itemJ3 itemJ3 .      itemO4 itemO4 itemO4 itemN2 .      itemN3 itemA4 itemA4 itemT4 itemT4 itemT4 itemH4 itemAA4 itemAA4 itemNN4 itemNN4"
+
+    ;
+}
+
+.item {
+    background-color: #000;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.itemJ1 {
+    grid-area: itemJ1;
+}
+
+.itemO1 {
+    grid-area: itemO1;
+}
+
+.itemN1 {
+    grid-area: itemN1;
+}
+.itemA1 {
+    grid-area: itemA1;
+}
+.itemT1 {
+    grid-area: itemT1;
+}
+.itemH1 {
+    grid-area: itemH1;
+}
+.itemAA1 {
+    grid-area: itemAA1;
+}
+.itemNN1 {
+    grid-area: itemNN1;
+}
+
+
+
+.itemJ2 {
+    grid-area: itemJ2;
+}
+
+.itemO2 {
+    grid-area: itemO2;
+}
+.itemO3 {
+    grid-area: itemO3;
+}
+
+.itemN2 {
+    grid-area: itemN2;
+}
+.itemA2 {
+    grid-area: itemA2;
+}
+.itemT2 {
+    grid-area: itemT2;
+}
+.itemH2 {
+    grid-area: itemH2;
+}
+.itemAA2 {
+    grid-area: itemAA2;
+}
+.itemNN2 {
+    grid-area: itemNN2;
+}
+
+
+
+.itemJ3 {
+    grid-area: itemJ3;
+}
+
+.itemO4 {
+    grid-area: itemO4;
+}
+
+.itemN3 {
+    grid-area: itemN3;
+    margin: 0;
+}
+
+.itemA3 {
+    grid-area: itemA3;
+}
+.itemT3 {
+    grid-area: itemT3;
+}
+.itemH3 {
+    grid-area: itemH3;
+}
+.itemAA3 {
+    grid-area: itemAA3;
+}
+.itemNN3 {
+    grid-area: itemNN3;
+}
+
+
+
+.itemA4 {
+    grid-area: itemA4;
+}
+.itemT4 {
+    grid-area: itemT4;
+}
+.itemH4 {
+    grid-area: itemH4;
+}
+.itemAA4 {
+    grid-area: itemAA4;
+}
+.itemNN4 {
+    grid-area: itemNN4;
+}
